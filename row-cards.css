@@ -1,0 +1,75 @@
+body {
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.employee-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    margin: 15px auto;
+    justify-content: space-between;
+    width: 86%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    align-items: center;
+}
+
+.card-employee-skils {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-employee {
+    display: flex;
+    gap: 12px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.card-employee img {
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.card-employee-skils li {
+    font-size: 0.9rem;
+    color: #664;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+    }
+
+    .card-employee, .card-employee-skils {
+        justify-content: center;
+        gap: 15px;
+    }
+}
